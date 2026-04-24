@@ -35,6 +35,7 @@ async function startSort() {
     for (let j = 0; j < arr.length - i - 1; j++) {
 
       render([j, j+1]);
+
       document.getElementById("log").innerText =
         `Comparing ${arr[j]} and ${arr[j+1]}`;
 
@@ -47,6 +48,7 @@ async function startSort() {
         arr[j+1] = temp;
 
         document.getElementById("log").innerText = "Swapping...";
+
         render([j, j+1]);
 
         await sleep(500);
