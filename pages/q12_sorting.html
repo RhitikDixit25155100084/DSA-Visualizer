@@ -9,14 +9,29 @@
 
 <div class="main">
 
-  <!-- LEFT -->
+  <!-- LEFT SIDE (CODE + STEPS) -->
   <div class="left">
+
+    <h3>Bubble Sort Code (C)</h3>
+
+<pre>
+for(i=0;i<n-1;i++){
+  for(j=0;j<n-i-1;j++){
+    if(arr[j] > arr[j+1]){
+      swap(arr[j], arr[j+1]);
+    }
+  }
+}
+</pre>
+
     <button onclick="generate()">Generate Array</button>
     <button onclick="startSort()">Start Sorting</button>
-    <p id="log"></p>
+
+    <p id="log">Steps will appear here...</p>
+
   </div>
 
-  <!-- RIGHT -->
+  <!-- RIGHT SIDE (ANIMATION) -->
   <div class="right">
     <div id="bars"></div>
   </div>
