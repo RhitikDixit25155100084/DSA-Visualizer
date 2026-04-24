@@ -1,0 +1,6 @@
+body{background:#0f172a;color:white;font-family:sans-serif;text-align:center;}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:20px;}
+.card{padding:20px;background:#38bdf8;color:black;border-radius:10px;text-decoration:none;}
+.main{display:flex;}
+.left{width:40%;}
+.right{width:60%;}
